@@ -1,0 +1,13 @@
+import math
+
+temp_surround = float(input("Enter surrounding temp: "))
+temp_1 = float(input("Enter body temp @T1: "))
+temp_2 = float(input("Enter body temp @T2: "))
+T2 = float(input("Enter final time: "))
+temp_at_T = float(input("Enter given temp at particular time T: "))
+T1 = 0
+e = 2.71
+c = (temp_1-temp_surround)
+print(c)
+k = (-1/T2)*(math.log((temp_2-temp_surround)/c))
+print(k)
